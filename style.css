@@ -1,0 +1,301 @@
+* {
+    /*box-sizing: border-box;*/
+}
+body{
+/*    background-color:background: #ADA996;  !* fallback for old browsers *!*/
+/*    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  !* Chrome 10-25, Safari 5.1-6 *!*/
+/*    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+/*;*/
+    /*display: block;*/
+    width:100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: Arial, Century Gothic, SansSerif, serif;
+    font-size: 16px;
+    margin: 0 5px;
+}
+.general{
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    margin: 20px 20px 30px 10px;
+    height: 100%;
+    padding: 0 4px;
+}
+.header{
+    height: 110px;
+    background-color: #0077D6;
+    color: white;
+    font-size: 18px;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    width: 400px;
+    height: 100px;
+}
+nav{
+    height: 100px;
+    background-color: #0077D6;
+    font-size: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+}
+nav ul li{
+    display: inline-flex;
+    align-items: center;
+    margin: 30px 60px;
+    list-style-type: disc;
+}
+li{
+   list-style-type: none;
+}
+nav ul li a{
+    color: white;
+}
+#call{
+    padding: 10px 30px ;
+    color: #2a57ff;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px 0;
+    cursor: pointer;
+}
+.bot {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    margin: 10px auto;
+    border: 1px solid #9e9e9e;
+    text-align: center;
+}
+.bot{
+    display: none;
+    z-index: 100;
+    background-color: #c1c1c1;
+}
+#bot> #icon{
+    padding-left:275px;
+    width: 20px;
+    height: 20px;
+}
+#bot>h2 {
+    padding: 15px 10px;
+    text-align: center;
+    border-bottom: 2px solid #0077a7;
+    /*margin-bottom: 35px;*/
+    font-size: 25px;
+    color: blue;
+}
+#bot input,textarea{
+    width: 200px;
+    text-align: center;
+    margin:10px auto;
+    padding: 5px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 30px 0;
+    word-spacing: 3px;
+    text-indent: 20px;
+    border: 2px solid #7de4ff;
+    padding-top: 20px;
+}
+.container>article{
+    width: 400px;
+    margin: 10px;
+    word-spacing: 3px;
+}
+#two{
+    width: 500px;
+    height: 380px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+h1{
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+.collection{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.collection>div{
+    width: 29,5%;
+    height: 50%;
+    background-color: #7de4ff;
+    margin: 10px;
+}
+.example img{
+    width: 450px;
+    height:280px;
+}
+.example p{
+    text-align: center;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: blue;
+    cursor: pointer;
+}
+h2{
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.connection{
+    text-align: center;
+    background-color: #0077D6;
+    margin: 30px 20px;
+    color: white;
+    height: 150px;
+}
+.form {
+    margin-bottom: 20px;
+}
+.formBt {
+    border: 1px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.method{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: start;
+    background-color: #1488CC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    /*background-image: url(img/02.jpg);*/
+    /*background-repeat: repeat-x;*/
+}
+.method>div{
+    width: 25%;
+    margin:  20px auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+ li{
+    list-style-type: disc;
+     list-style-position: inside;
+     text-align: left;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 300px;
+    background-color: rgba(50, 50, 50, 0.87);
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+@media (max-width: 1024px){
+    .header >.one,.three{
+        display: none;
+    }
+    .container>article{
+        width: 90%;
+    }
+    nav{
+        justify-content:center ;
+    }
+    nav ul li{
+        margin: 30px 30px;
+    }
+}
+@media (max-width: 968px){
+    nav {
+        justify-content:center ;
+    }
+    nav ul li{
+        margin: 30px 30px;
+    }
+    ul{
+        font-size: 16px;
+        margin: 0 20px;
+    }
+    .collection{
+        justify-content: center;
+    }
+}
+@media (max-width: 768px){
+    .header>.two,.three{
+        font-size: 14px;
+    }
+    ul{
+        display: none;
+    }
+    .method ul li{
+        display: none;
+    }
+}
+@media (max-width: 540px){
+        .header{
+            flex-direction: row;
+            align-items: center;
+            height: 180px;
+        }
+    #logo{
+        width: 200px;
+        height: 70px;
+    }
+        #call{
+            display: block;
+        }
+}
+@media (max-width: 360px){
+        .header{
+            flex-direction: column;
+            height: 200px;
+            margin: 5px 0;
+        }
+        #logo {
+            width: 280px;
+            height: 80px;
+        }
+        .container{
+            align-items: center;
+        }
+        #two{
+            width:260px;
+            height:170px;
+            padding-right: 20px;
+        }
+        form{
+            flex-direction: column ;
+            flex-wrap: wrap;
+        }
+        .method{
+            flex-direction: column;
+        }
+        .footer{
+            flex-direction: column;
+            align-items: start;
+        }
+}
